@@ -1,0 +1,20 @@
+{
+    "manifest_version": 3,
+    "name": "WhatsApp Bulk Messenger",
+    "version": "1.0",
+    "description": "Send bulk messages, extract group contacts, and import/export contacts on WhatsApp Web.",
+    "permissions": ["storage", "activeTab", "scripting"],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "content_scripts": [
+      {
+        "matches": ["https://web.whatsapp.com/*"],
+        "js": ["contentScript.js"]
+      }
+    ]
+  }
+  

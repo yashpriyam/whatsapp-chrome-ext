@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>WhatsApp Bulk Messenger</title>
+    <style>
+      body {
+        width: 300px;
+        padding: 10px;
+        font-family: Arial, sans-serif;
+      }
+      button {
+        margin: 10px 0;
+        padding: 10px;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>WhatsApp Bulk Messenger</h3>
+    <textarea id="message" rows="4" placeholder="Enter your message here"></textarea>
+    <button id="send-bulk">Send Bulk Message</button>
+    <button id="extract-contacts">Extract Group Contacts</button>
+    <button id="import-contacts">Import Contacts</button>
+    <button id="export-contacts">Export Contacts</button>
+
+    <input type="file" id="importFile" style="display: none;" />
+  </body>
+
+  <script src="popup.js"></script>
+</html>
